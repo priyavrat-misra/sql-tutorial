@@ -1,4 +1,4 @@
--- The INNER JOIN Operator
+-- The INNER JOIN Operator --
 USE sql_store;
 
 SELECT * FROM orders INNER JOIN customers ON orders.customer_id = customers.customer_id;
@@ -32,7 +32,7 @@ FROM
 SELECT oi.* FROM order_items oi JOIN products p ON oi.product_id = p.product_id;
 
 
--- Joining across Databases
+-- > Joining across Databases < --
 USE sql_store;
 SELECT * FROM order_items oi JOIN sql_inventory.products p ON oi.product_id = p.product_id;
 
@@ -41,7 +41,7 @@ SELECT * FROM sql_store.order_items oi JOIN products p ON oi.product_id = p.prod
 -- query will be different depending on the current database
 
 
--- Self Joins
+-- > Self Join < --
 USE sql_hr;
 
 SELECT * from employees e JOIN employees m ON e.reports_to = m.employee_id;
@@ -54,7 +54,7 @@ FROM
     employees m ON e.reports_to = m.employee_id;
 
 
--- Joining multiple Tables
+-- > Joining multiple tables < --
 USE sql_store;
 SELECT 
     o.order_id,
@@ -80,7 +80,7 @@ FROM
     payment_methods pm ON p.payment_method = pm.payment_method_id;
 
 
--- Compound Join
+-- > Compound Join < --
 USE sql_store;
 SELECT 
     *
@@ -91,7 +91,7 @@ FROM
         AND oi.product_id = oin.product_id;
 
 
--- Implicit Join
+-- > Implicit Join < --
 USE sql_store;
 SELECT * FROM orders o, customers c WHERE o.customer_id = c.customer_id;
 -- is same as

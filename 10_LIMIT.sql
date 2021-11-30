@@ -1,4 +1,4 @@
--- The LIMIT Clause
+-- The LIMIT Clause --
 USE sql_store;
 
 SELECT * FROM customers LIMIT 3;
@@ -10,7 +10,7 @@ SELECT * FROM customers LIMIT 15;
 SELECT * FROM customers LIMIT 6, 3;
 -- skips first 6 customers, outputs the next 3
 
--- get the top 3 customers with most points
+-- > get the top 3 customers with most points
 SELECT * FROM customers ORDER BY points DESC LIMIT 3;
 
 -- LIMIT always comes at the end

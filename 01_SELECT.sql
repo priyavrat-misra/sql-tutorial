@@ -1,4 +1,4 @@
--- The SELECT Clause
+-- The SELECT Clause --
 USE sql_store; -- selects the sql_store schema
 
 SELECT * FROM  customers WHERE customer_id = 1;
