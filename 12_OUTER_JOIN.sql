@@ -1,4 +1,4 @@
--- The OUTER JOIN Operator --
+-- The OUTER JOIN Clause --
 USE sql_store;
 
 SELECT 
