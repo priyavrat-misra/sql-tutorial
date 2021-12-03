@@ -1,4 +1,4 @@
--- Inserting rows
+-- Inserting rows --
 -- > Inserting single row < --
 USE sql_store;
 

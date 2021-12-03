@@ -1,4 +1,4 @@
--- Updating rows
+-- Updating rows --
 -- > Updating single row < --
 USE sql_invoicing;
 

@@ -1,4 +1,4 @@
--- Deleting rows
+-- Deleting rows --
 USE sql_invoicing;
 
 DELETE FROM invoices; -- will delete all the records

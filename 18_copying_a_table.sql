@@ -1,4 +1,4 @@
--- Creating a copy of a table
+-- Creating a copy of a table --
 USE sql_store;
 
 CREATE TABLE orders_archived AS SELECT * FROM orders;
